@@ -1,0 +1,48 @@
+.tiny_ai-button {
+    display: flex;
+    padding: 11px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    &.tertiary {
+        background-color: unset;
+        border: none;
+        padding: 0;
+        color: var(--color-font);
+
+        &:hover {
+            background-color: unset;
+            color: var(--bs-primary) !important;
+        }
+    }
+
+    [class^="fa-"] {
+        font-size: 20px;
+    }
+
+    &.left {
+        .tiny_ai-icon-left {
+            margin-right: 8px;
+        }
+    }
+
+    &.right {
+        .tiny_ai-icon-right {
+            margin-left: 8px;
+        }
+    }
+
+    .tiny_ai-button-text {
+        flex-grow: 1;
+        text-align: center;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    &.has-icon {
+        .tiny_ai-button-text {
+            flex-grow: 0;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.tiny_ai-card-button {
+    display: flex;
+    padding: 16px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--bs-primary);
+    background: var(--bs-modal-bg);
+    text-decoration: none;
+    transition: background-color ease-in-out 0.5s;
+
+    &:hover {
+        border-radius: 8px;
+        border: 1px solid var(--bs-primary);
+        background: var(--bs-primary-bg-subtle);
+        text-decoration: none;
+
+        transition: background-color ease-in-out 0.5s;
+    }
+
+    &.disabled {
+        border-radius: 8px;
+        border: 1px solid var(--bs-gray-500);
+        background: var(--bs-modal-bg);
+        pointer-events: none;
+        cursor: not-allowed;
+
+        .tiny_ai-card-button--tool,
+        .tiny_ai-card-button--description {
+            color: var(--bs-gray-500);
+        }
+
+        [class^="icon-tiny_ai_"],
+        [class^="fa-"] {
+            color: var(--bs-gray-500);
+        }
+    }
+
+    .tiny_ai-card-button--text-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tiny_ai-card-button--tool,
+    .tiny_ai-card-button--description {
+        color: var(--color-font, var(--bs-emphasis-color));
+        text-align: center;
+        line-height: 26px; /* 144.444% */
+        text-decoration: none;
+
+    }
+    .tiny_ai-card-button--tool {
+        font-weight: 700;
+    }
+    .tiny_ai-card-button--description {
+        font-weight: 400;
+    }
+
+    [class^="icon-tiny_ai_"],
+    [class^="fa-"] {
+        font-size: 24px;
+        color: var(--color-font, var(--bs-emphasis-color));
+    }
+
+    @include respond-to('mobile') {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+}
+

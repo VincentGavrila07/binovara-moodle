@@ -1,0 +1,21 @@
+.tiny_ai-textarea {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    flex: 1 0 0;
+    align-self: stretch;
+    min-height: 120px;
+    height: 100%;
+    width: 100%;
+    resize: none; /* Prevent manual resizing */
+    overflow-y: auto; /* Enable vertical scroll */
+
+    border: var(--bs-border-width) solid var(--color-input-border, #6a737b);
+    border-radius: var(--bs-border-radius);
+    background-color: var(--color-input-bg);
+    color: var(--color-input);
+
+    @include custom-scrollbar;
+}

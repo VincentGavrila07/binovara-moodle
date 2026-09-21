@@ -1,0 +1,23 @@
+.tiny_ai-dropdown-label {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.tiny_ai-dropdown .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.tiny_ai-dropdown .dropdown-menu {
+    width: 100%;
+}
+
+.tiny_ai-dropdown.dropup .dropdown-toggle::after {
+    font-size: 9px;
+    margin-left: auto;
+}
+
+.tiny_ai-dropdown .dropdown-toggle::after {
+    margin-left: auto;
+}
